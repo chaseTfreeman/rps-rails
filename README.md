@@ -2,11 +2,13 @@
 
 ## Getting Started
 
-To get started, after cloning the repo and switching to the root directory run the following to play the basic, un-styled version of RPS.
+To get started, clone  the repo and run `cd rps-rails` to change to the root directory.
+
+For the un-styled version of RPS, use the master branch and enter the following:
 
 ```bash
 bundle install
 rails s
 ```
 
-To play the styled version, swtich the the "styles" branch before running `rails s`
+To play the styled version, swtich to the "styles" branch (`git checkout styles`) before running `rails s`
