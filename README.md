@@ -1,24 +1,12 @@
-# README
+# RPS-Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
 
-Things you may want to cover:
+To get started, after cloning the repo and switching to the root directory run the following to play the basic, un-styled version of RPS.
 
-* Ruby version
+```bash
+bundle install
+rails s
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To play the styled version, swtich the the "styles" branch before running `rails s`
