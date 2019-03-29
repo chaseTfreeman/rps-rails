@@ -1,6 +1,6 @@
 <div class="grid-container">
   <div>
-    1st
+1st
   </div>
   <div>
     2nd Div
@@ -9,13 +9,13 @@
     3rd div
   </div>
   <div>
-    <%= link_to "Rock", curb_throw_path(:player_throw => "rock"), remote: true %>
+    <%= link_to "Rock", curb_throw_path(:player_throw => "rock"), data: { modal: true } %>
   </div>
   <div>
-    5th Div
+    <%= link_to 'Paper', curb_throw_path(:player_throw => "paper"), data: { modal: true } %>
   </div>
   <div>
-    6th Div
+    <%= link_to 'Scissors', curb_throw_path(:player_throw => "scissors"), data: { modal: true } %>
   </div>
   <div>
     7th Div
