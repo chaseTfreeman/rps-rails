@@ -1,23 +1,23 @@
 
 @import "bootstrap";
 
- html, body, .grid-container { height: 100%; margin: 0; }
+img {
+  width: 63.3px;
+  height: 138.65px;
+}
 
- .grid-container * {
-  border: 1px solid gray;
-  position: relative;
- }
+.throw {
+  width: 240px;
+  height: 273px;
+}
 
- .grid-container *:after {
-  content:attr(class);
-  position: absolute;
-  top: 0;
-  left: 0;
- }
-
- .grid-container {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr;
-   grid-template-areas: ". . ." ". . ." ". . .";
- }
+h1{
+  font-family: 'Montserrat', sans-serif;
+  color: #36006C;
+  font-size: 50px;
+}
+h4{
+  font-family: 'Montserrat', sans-serif;
+  color: #36006C;
+  font-size:24px;
+}

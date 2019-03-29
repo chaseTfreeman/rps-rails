@@ -6,11 +6,14 @@ class RequestController < ActionController::Base
     downcased_response = response["body"].gsub('"','').downcase
     player_throw = params[:player_throw]
     curb_throw = downcased_response
-    puts curb_throw
 
+    # Could add in a hammer to the hash if you'd like, as long as we know what which item it defeats :)
     wins = {'scissors' => 'paper', 'rock' => 'scissors', 'paper' => 'rock'}
-puts wins
-puts curb_throw
+
+    # For convenience
+      puts player_throw
+      puts curb_throw
+
     if curb_throw == player_throw
       render :template => "requests/draw"
     elsif wins[curb_throw] == player_throw

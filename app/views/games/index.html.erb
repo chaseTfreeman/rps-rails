@@ -1,29 +1,40 @@
-<div class="grid-container">
-  <div>
-1st
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 d-flex justify-content-center">
+      <h1>ROCK – PAPER – SCISSORS</h1>
+    </div>
   </div>
-  <div>
-    2nd Div
+  <div class="row">
+    <div class="col-md-12 d-flex d-flex justify-content-center">
+      <p>
+        Rock Paper Scissors is a zero sum game that is usually played by two people using their hands and no tools. The idea is to make shapes with an outstretched hand where each shape will have a certain degree of power and will lead to an outcome.</p>
+    </div>
   </div>
-  <div>
-    3rd div
+  <div class="row justify-content-center">
+    <div class="col-md-4 throw d-flex justify-content-center">
+      <div class="justify-content-center">
+        <%= link_to image_tag("Rock.svg", border: 0), curb_throw_path(:player_throw => "rock"), data: { modal: true }, class: "d-flex justify-content-center" %>
+        <div class="mx-auto">
+          <h4>Rock</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 throw d-flex justify-content-center">
+      <div class="justify-content-center">
+        <%= link_to image_tag("Paper.svg", border: 0), curb_throw_path(:player_throw => "paper"), data: { modal: true }, class: "text-center" %>
+        <div class="mx-auto">
+          <h4>PAPER</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 throw d-flex justify-content-center">
+      <div class="justify-content-center">
+        <%= link_to image_tag("Scissors.svg", border: 0), curb_throw_path(:player_throw => "scissors"), data: { modal: true }, class: "text-center" %>
+        <div class="mx-auto">
+          <h4>Scissors</h4>
+        </div>
+      </div>
+    </div>
   </div>
-  <div>
-    <%= link_to "Rock", curb_throw_path(:player_throw => "rock"), data: { modal: true } %>
-  </div>
-  <div>
-    <%= link_to 'Paper', curb_throw_path(:player_throw => "paper"), data: { modal: true } %>
-  </div>
-  <div>
-    <%= link_to 'Scissors', curb_throw_path(:player_throw => "scissors"), data: { modal: true } %>
-  </div>
-  <div>
-    7th Div
-  </div>
-  <div>
-    8th Div
-  </div>
-  <div>
-    9th Div
-  </div>
+  <div id="modal-holder"></div>
 </div>
