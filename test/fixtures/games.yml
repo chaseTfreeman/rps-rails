@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_throw: MyString
+  curb_throw: MyString
+  win: false
+
+two:
+  player_throw: MyString
+  curb_throw: MyString
+  win: false
